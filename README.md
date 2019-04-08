@@ -14,3 +14,4 @@ Formatting of filenames for papers: XXXX_firstAuthorLastName_titleSummary (e.g.,
 	- **Summary**: Uses machine learning to improve Quality of Experience (QoE) for VoIP by combining methods from overlay networks and reinforcement learning. Demonstrates theoretical and experimental reduction in metrics of Poor Network Rate (PNR), including round-trip time (RTT), packet loss, and jitter.
 	- **Methods**: Reinforcement learning (multi-armed bandit, Upper-confidence bound, epsilon-greedy). Overlay networks.
 	- **Upshot**: Not strictly a wireless communications or deep learning application, but demonstrates methods which might prove applicable.
+
