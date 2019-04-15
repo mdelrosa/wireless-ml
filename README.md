@@ -6,6 +6,12 @@ Research on machine learning in wireless communications.
 Formatting of filenames for papers: XXXX_firstAuthorLastName_titleSummary (e.g., 2018_Dorner_DLOverAir)
 
 - S. Dörner et al, "Deep Learning Based Communication Over the Air," IEEE, Feb 2018. ([Link](https://github.com/mdelrosa/wireless-ml/blob/master/Papers/2018_Dorner_DLoverAir.pdf), [Summary Slides](https://docs.google.com/presentation/d/122XdVg9kUqoCtVnBc7acemM5RyVIfHtDeRlXqwHdOQk/edit#slide=id.p))
+- A. Ali and F. Yangyu, "Automatic Modulation Classification Using Deep Learning Based on Sparse Autoencdoers with Nonegativity Constraints," IEEE, Nov 2017. ([Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8038046))
+	- **Summary**: Extends notion of stacked autoencoders (SAE) by leveraging sparsity ([see here](https://web.stanford.edu/class/cs294a/sparseAutoencoder.pdf) for explanation of sparsity in autoencoders) and nonnegativity constraints on the network's hidden layers. Compares performancec of SAE and SAE with extended maximum likelihood estimator to the autoencoder with nonnegativity constraint (ANC) in classifying signals from five different modulation schemes.
+	- **Methods**: Stacked Autoencoders (greedy layer-wise training), Sparse Autoencoders, Cumulants (as signal features), KL Divergence (used to express sparsity constraint in loss function).
+	- **Comments**:
+		- KL Divergence normally used to measure/minimize difference between two probability distributions. Here, KL Divergence is used to minimizing discrepancy between a given hidden layer's average activation and the sparsity constraint.
+		- No comments on runtime/viability as a real-time signal classification method. 
 - S. Peng et al, "Modulation Classification Based on Signal Constellation Diagrams and Deep Learning," IEEE Transactions on Neural Networks and Learning Systems. Mar 2019. ([Link](https://ieeexplore.ieee.org/document/8418751))
 	- **Summary**: Performs signal modulation classification by applying image-like segmentation of constellation diagrams to make data compatible with well-established convolutional neural networks (CNN), including [AlexNet](https://medium.com/@smallfishbigsea/a-walk-through-of-alexnet-6cbd137a5637) and [GoogLeNet](https://ai.google/research/pubs/pub43022). Demonstrates DL-based classification accuracy exceeds that of other traditional classification methods (i.e., cumulant-based statistics).
 	- **Methods**: Deep Learning, Convolutional Neural Networks, Image Processing. 
