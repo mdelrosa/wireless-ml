@@ -17,6 +17,12 @@ For dataset generation, [radioML dataset repo](https://github.com/radioML/datase
 
 Formatting of filenames for papers: XXXX_firstAuthorLastName_titleSummary (e.g., 2018_Dorner_DLOverAir)
 
+- Huan, Y., Li, S., Hou, Y. T., and Lou, W., "GPF: A GPU-based design to achieve ~100us scheduling for 5G NR," MobiCom '18, Nov 2018.
+	- **Summary**: Treats problem of resource-block/modulation coding scheme as hierarchical arrangement of sub-problems to make amenable to GPU-based solver.
+- O'Shea, T. J., Roy, T., and West, N., "Approximating the void: Learning stochastic channel models from observation with variational generative adversarial networks," arXiv:1805.06350v2, May 2018.
+	- **Summary**: Uses concept of adversarial networks (popularized by [Goodfellow 2014 paper](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)) to simultaneously train a channel autoencoder and a channel model to allow for backpropagation/gradient calculation.
+- O'Shea, T. J., Roy, T., West, N., and Hilburn, B. C., "Physical layer communications system design over-the-air usingadversarial networks," 	arXiv:1803.03145 [eess.SP], Mar 2018.
+	- **Summary**: Similar approach to [Dörner](https://github.com/mdelrosa/wireless-ml/blob/master/Papers/2018_Dorner_DLoverAir.pdf) (training encoder/decoder), but trains a network to approximate the channel rather than implementing transfer learning from an analytical model.
 - Corlay, V, et al, "Multilevel MIMO Detection with Deep Learning," IEEE 2018 52nd Asilomar Conference, Oct 2018. [Link](https://ieeexplore.ieee.org/document/8645519)
 	- **Summary**: Using a deep neural network (DNN) with a customized sigmoid function to reduce network complexity, the authors achieve near Maximimum-Likelihood decoder performance on decoding a MIMO channel.
 	- **Methods**: Multi-level sigmoid function, DNN, random forest
